@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    text-align: center;  
+}
+
+.content {
+    width: 70vh;
+    height: 70vh;
+    background-color: whitesmoke;
+}
+
+img {
+    width: 35%;
+    height: auto; /* Keep aspect ratio */
+    margin: 0 2%;
+}
+
+.choice img {
+    width: 27%;
+    height: 27%;
+}
+
+.top {
+    margin: 7% 10% 0% 10%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.img1 {
+    animation:shake 0.7s ease infinite; /* Apply shake animation */
+    transform:rotate(90deg)rotateY(0deg);
+}
+.img2{
+    animation:shake 0.7s ease infinite;
+    transform:rotate(270deg)rotateY(180deg); 
+}
+
+@keyframes shake {
+    50% {
+        transform:skew(2);
+        transform: translateX(20px);
+    }
+}
+.choice {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.result h2 {
+    margin-top: 3rem; 
+    font-size: 40px;
+}
+
+.option_img.active {
+    border: 2px solid rgb(24, 24, 27);
+    border-radius: 10%; 
+    transform: scale(1);  /* Slightly enlarge the active image */
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
