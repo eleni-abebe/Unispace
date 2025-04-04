@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function Classes() {
     const [visibleFloors, setVisibleFloors] = useState('');
@@ -25,7 +26,21 @@ function Classes() {
     };
 
     return (
-        <div className="container">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/home">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/class">Class Status</Link>
+                    </li>
+                    <li>
+                        <Link to="/schedule">Class Queue</Link>
+                    </li>
+                </ul>
+            </nav>
+            <div className="container2">
             <h3>Building</h3>
             <div className="blocks">
                 <div className="building">
@@ -138,11 +153,8 @@ function Classes() {
 
                 </div>
             </div>
-                    
-
-
-
-                </div>
+        </div>
+    </div>
             
             
             

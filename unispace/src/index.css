@@ -40,7 +40,7 @@ nav ul li a:hover {
     background-color: #B7B3FF;
 }
 
-.container {
+.container2 {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -184,8 +184,8 @@ nav ul li a:hover {
 
 .welcome-container {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 0px auto;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -270,3 +270,87 @@ nav ul li a:hover {
         margin: 5px 0;
     }
 }
+.App {
+    
+    background: linear-gradient(to bottom, #6C63FF, #B7B3FF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background: linear-gradient(to bottom, #6C63FF, #B7B3FF);
+    box-shadow: 5px 5px 10px rgba(108, 99, 255, 0.8);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 80px;
+    width:50%;
+    color:white;
+  }
+  .schedule-container {
+    display: flex; /* Enables flexbox for side-by-side layout */
+    justify-content:space-around; /* Optional: Spaces sections evenly */
+    padding: 20px; /* Optional: Adds space inside the container */
+  }
+  .section {
+    flex: 1; /* Makes each section take equal space */
+    padding: 10px; /* Inner space for each section */
+    text-align: center; /* Optional: Centers text inside the sections */
+  }
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    padding:auto 0px;
+    margin:0;
+  }
+  .card-header h2 {
+    margin-left:-160px;
+  }
+  .red-square {
+    width: 40px;
+    height: 40px;
+    background-color: #EB1313;
+    border-radius: 10px;
+    margin-left:50px;
+  }
+  
+  .card-queue {
+
+    margin-top: 20px;
+  }
+  
+  .reserve-class label, .queue-para {
+    color:black;
+  }
+  .class-queue, .reserve-class {
+    margin-bottom: 20px;
+  }
+  .reserve-class h3 {
+    margin-left: 30px;
+  }
+  .schedule-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .schedule-input {
+    width:50px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="time"] {
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #FF6584;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
