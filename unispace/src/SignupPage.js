@@ -20,7 +20,7 @@ function SignupPage() {
             <input type="email" />
             <label className='signup-password'>Password</label>
             <input type="password" />
-            <button>Signup</button>
+            <button className='buttons'>Signup</button>
             <p>
               Already have an account?{' '}
               <Link to="/">Login</Link>

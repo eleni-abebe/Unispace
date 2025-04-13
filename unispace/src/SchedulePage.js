@@ -40,7 +40,7 @@ function SchedulePage() {
               To:
               <input type="time" name="to" className='schedule-input' />
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" className="buttons">Submit</button>
           </form>
         </div>
       </div>

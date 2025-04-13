@@ -18,7 +18,7 @@ function LoginPage() {
             <input type="text" />
             <label className='login-password'>Password</label>
             <input type="password" />
-            <button><Link to="/home">Login</Link></button>
+            <button className='buttons'><Link to="/home">Login</Link></button>
             <p>
               Don't have an account?{' '}
               <Link to="/signup">Sign Up</Link>
